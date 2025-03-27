@@ -1,0 +1,28 @@
+#include <stdio.h> // Libreria necesaria para utilizar printf()
+
+int main(){
+	
+	int maximo, i, divisor, Primo;
+	
+	printf("Este es un programa que muestra los numeros primos desde el 1 al numero que usted ingrese\n");
+	printf("Ingrese el numero maximo: ");
+	scanf ("%d", &maximo); // Guardamos el numero ingresado por el usuario
+	
+	printf("\nNumeros primos del 1 al %d\n", maximo);
+	
+	for (i = 2; i <= maximo; i++) {
+		Primo = 1; 
+		
+		for (divisor = 2; divisor < i; divisor++) {
+			if (i % divisor == 0) {
+				Primo = 0; // No es primo
+				break; // Salimos del bucle
+			}
+		}
+		
+		if (Primo) { 
+			printf("Es primo el nro: %d\n", i);
+		}
+	}
+	return 0;
+}
