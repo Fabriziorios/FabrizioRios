@@ -7,5 +7,4 @@
 - 💬 Ask me about basquet
 - 📫 How to reach me: celu
 - 😄 Pronouns: fabri
-- ⚡ Fun fact: asde
--->
+
